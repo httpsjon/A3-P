@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Alan Turing</title>
+    <link rel="shortcut icon" href="img/favicon (1).ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <img src="img/logo1.png" alt="imagem da logo do hospital junto com o nome">
+        </header>
+        <button id="buttonLogin">Login</button>
+        <button id="buttonFil">Fila</button>
+        <button id="buttonMed">Médico</button>
+    </div>
+    <script>
+        
+        var buttonLogin = document.getElementById('buttonLogin');
+        buttonLogin.addEventListener('click', function() {
+            window.location.href = 'pagina-de-login.html';
+        });
+
+
+
+        var buttonFil = document.getElementById('buttonFil');
+        buttonFil.addEventListener('click', function() {
+            window.location.href = 'pagina-fila.html';
+        });
+        var buttonMed = document.getElementById('buttonMed')
+        buttonMed.addEventListener('click', function() {
+            window.location.href = 'pagina-medico.html';
+        });
+    </script>
+</body> 
+</html>
+ 

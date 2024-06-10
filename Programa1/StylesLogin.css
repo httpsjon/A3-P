@@ -1,0 +1,102 @@
+.formInput {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0);
+    font-size: 20px;
+    width: 300px;
+    height: 40px;
+    border-radius: 70px;
+    border: 1px solid rgb(150, 150, 150);
+    padding-left: 30px;
+}
+.formInput {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0);
+    font-size: 20px;
+    width: 300px;
+    height: 40px;
+    border-radius: 70px;
+    border: 1px solid rgb(150, 150, 150);
+    padding-left: 30px;
+}
+
+h1 {
+    margin-top: 4px;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3 {
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 30px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.btn_volog{
+    margin-top: 20px;
+    width: 320px;
+}
+.btn_volog2{
+    width: 320px;
+}
+.btn_login2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 20px;
+    width: 220px;
+}
+.btn_login {
+    margin-top: 30px;
+}
+button {
+    width: 200px;
+    height: 70px;
+    font-size: 25px;
+    border-radius: 20px;
+    background-color: #235816;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    font-weight: bold;
+}
+button:hover {
+    background-color:#ffffff;
+    color: #235816;
+    border: none;
+}
+button:active{
+    transform: scale(0.8);
+}
+.tela {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('img/family.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.login {
+    padding: 40px 100px ;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20%;
+    border-radius: 30px;
+    border: 1px solid rgba(131, 131, 131, 0.404);
+}
+.screen {
+display: none; /* Oculta todas as telas por padrão */
+}
+
+#screen1 {
+display: block; /* Exibe a tela 1 por padrão */
+}

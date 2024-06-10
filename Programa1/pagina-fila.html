@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon (1).ico" type="image/x-icon">
+    <title>Fila</title>
+    <style>
+        .tabela{
+            margin-top: 80px;
+        }
+        .dataHora{
+            margin-top: 90px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body,html{
+            height: 100%;
+            width: 100%;
+        }
+        .tabela_chamada{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-left:100px ;
+        }
+        td{
+            align-items: center;
+            font-size: 70px;
+            padding-left: 80px;
+            padding-right: 80px;;
+        }
+        th{
+            font-size: 90px;
+            align-items: center;
+            padding-left: 80px;
+            padding-right: 80px;;
+        }
+        .ajeitarh2{
+            margin-top: 50px;
+        }
+        .chamada1{
+            background-color: #245a16;
+            color: white;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 90px;
+            border-radius: 30px;
+            text-shadow: 5px 5px 8px rgb(0, 0, 0);
+            border:solid 1px black;
+            margin-top: 80px;
+        }
+        p{
+            font-weight: 700;
+        }
+        .apres{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 80px;
+        }
+        .nomeSala{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .tela{
+            background-image: url('img/test1_715x1080.jpeg');
+            width: 715px;
+            height: 100vh;
+            color: white;
+            font-size: 70px;
+            text-shadow: 5px 5px 8px rgb(0, 0, 0);
+            border: solid 1px rgb(182, 182, 182);
+        }
+        body{
+            background-color: #ffffff;
+            overflow: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            display: flex;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tela">   
+            <div class="nomeSala">
+                <div class="apres">
+                    <h2>Nome</h2>
+                        <p id="nome_id"></p>
+                </div>
+        </div> 
+       
+            <div class="apres">
+                <h2 class="ajeitarh2">Sala</h2>
+                    <p id="sala_id"></p>
+                    <p class="dataHora">Data / Hora: <time datetime="" id="current-time"></time></p>
+            </div>
+        </div>
+        <div class="tabela_chamada">
+                <h2 class="chamada1">Ultimos Chamados</h2>
+                <table class="tabela">
+                    <tr>
+                        <th>Nome</th> 
+                        <th>Sala</th> 
+                    </tr>
+                    <tr>
+                        <td id="nome_id"></td>
+                        <td id="sala_id"></td>
+                    </tr>
+                    <tr>
+                        <td id="nome_id"></td>
+                        <td id="sala_id"></td>
+                    </tr>
+                    <tr>
+                        <td id="nome_id"></td>
+                        <td id="sala_id"></td>
+                    </tr>
+                    <tr>
+                        <td id="nome_id"></td>
+                        <td id="sala_id"></td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+    <script>
+        var now = new Date();
+        var dateTimeString = now.toISOString();
+        var formattedDateTimeString = now.toLocaleString();
+        var timeElement = document.getElementById("current-time");
+        timeElement.textContent = formattedDateTimeString;
+        timeElement.setAttribute("datetime", dateTimeString);
+    </script>
+</body>
+</html>

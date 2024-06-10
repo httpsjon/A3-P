@@ -1,0 +1,66 @@
+.topo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+img{
+    width: 50%;
+    height: 50%;
+    margin-right: 100px;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.botaolateral{
+    height: 600px;
+    border: transparent;
+    border-radius: 30px;
+    font-weight: 900;
+}
+.telalado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.tela{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.pacientetexto{
+    width: 100%;
+    height: 250px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;;
+} 
+button:hover{
+    background-color:#235816;
+    color: white;
+    border: none;
+}
+button:active{
+    scale: 0.9;
+}
+.botao_passar{
+    width: 320px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    background-color: #235816;
+    color: white;
+    margin-top: 40px;
+}
+.botao_passar:hover{
+    background-color: white;
+    color: #235816;
+    border: solid 3px #235816;
+}
+h4{
+    font-size: 30px;
+}

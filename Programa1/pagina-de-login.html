@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon (1).ico" type="image/x-icon">
+    <title>Login Alan Turing</title>
+    <link rel="stylesheet" href="StylesLogin.css">
+</head>
+
+<body>
+    <form class="screen" id="screen1">
+        <div class="tela">
+            <div class="login">
+                <h1>Conecta-se</h1>
+                <div class="formBox">
+                    <div class="name">
+                        <h3>Cpf <br> <input  id="cpf_id" type="text" class="formInput" placeholder="Coloque seu cpf." oninput="this.value = this.value.replace(/[^0-9]/g, '');"></h3>
+                    </div>
+                    <div class="formBox">
+                        <h3>Data <br>
+                            <input id="data_id" type="date" class="formImput"></h3>
+                    </div>
+                </div>
+                <div class="formBox">
+                    <button class="formButtonSubmit" type="button" id="buttonLogin" onclick="login()">Acessar Conta</button>
+                    <button id="buttonRegister" onclick="changeScreen()">Fazer Cadastro</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="screen" id="screen2">
+        <div class="tela">
+            <div class="login">
+                <h1>Cadastrar</h1>
+                <div class="login_1">
+                    <div class="cps_div">
+                        <h3>Cpf <br> <input id="cpf_id" type="text" class="cpf_inp" placeholder="Coloque seu cpf." oninput="this.value = this.value.replace(/[^0-9]/g, '');"></h3>
+                    </div>
+                    <div class="name_div">
+                        <h3>Nome <br> <input id="nome_id" type="text" class="cpf_inp" placeholder="Coloque seu nome."></h3>
+                    </div>
+                    <div class="date_div">
+                        <h3>Data <br>
+                            <input id="data_id" type="date" class="data_inp" ></h3>
+                    </div>
+                </div>
+                <div class="btn_login2">
+                    <button class="btn_volog2" id="buttonLogin2" onclick="register()">Realizar o cadastro</button>
+                    <button class="btn_volog" id="buttonRegister2" onclick="changeScreen()">Voltar para login</button>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <script src="./app/login.js"></script>
+</body>
+</html>
